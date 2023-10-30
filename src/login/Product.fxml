@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="767.0" prefWidth="1049.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.ProductController">
+   <children>
+      <AnchorPane prefHeight="777.0" prefWidth="1050.0">
+         <children>
+            <TableView fx:id="produc" layoutY="387.0" prefHeight="392.0" prefWidth="1050.0">
+              <columns>
+                <TableColumn fx:id="p_id" minWidth="150.0" prefWidth="75.0" text="Product_ID" />
+                <TableColumn fx:id="p_name" minWidth="250.0" prefWidth="75.0" text="Product_Name" />
+                  <TableColumn fx:id="p_brand" minWidth="250.0" prefWidth="75.0" text="Brand" />
+                  <TableColumn fx:id="p_description" minWidth="400.0" prefWidth="75.0" text="Desciption" />
+              </columns>
+            </TableView>
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="40.0" prefWidth="268.0" text="Product">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="T4" layoutX="282.0" layoutY="213.0" prefHeight="45.0" prefWidth="406.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="T2" layoutX="148.0" layoutY="80.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="T3" layoutX="576.0" layoutY="80.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="282.0" layoutY="174.0" prefHeight="39.0" prefWidth="155.0" text="Description" />
+            <Label layoutX="576.0" layoutY="41.0" prefHeight="39.0" prefWidth="155.0" text="Brand" />
+            <Label layoutX="150.0" layoutY="41.0" prefHeight="39.0" prefWidth="155.0" text="Product_Name" />
+            <Button fx:id="addproduct" layoutX="86.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#addnewproduct" prefHeight="31.0" prefWidth="141.0" text="ADD">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="315.0" layoutY="336.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="141.0" text="EDIT">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="559.0" layoutY="336.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="141.0" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="813.0" layoutY="336.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="141.0" text="Clear">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
